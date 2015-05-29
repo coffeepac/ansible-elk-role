@@ -2,7 +2,7 @@
 - name: Kibana archive available
   get_url:
     dest=/opt
-    url=https://download.elastic.co/kibana/kibana/kibana-{{ elk_kibana.version }}.tar.gz
+    url=http://download.elastic.co/kibana/kibana/kibana-{{ elk_kibana.version }}.tar.gz
     owner={{ elk_nginx.user }} group={{ elk_nginx.user }}
   sudo: yes
   register: new_archive_downloaded
